@@ -13,28 +13,11 @@
 
 ### Front-End
 
-- **React.js** – UI
-- **Redux** – State management
-- **Tailwind CSS** – Styling
-- **Material-UI** – Pre-built UI components
-- **React Router** – Navigation
-- **Framer Motion** – Animations
-- **Formik** – Form handling
-- **Jest** – Unit testing
-- **Vite** – Bundling and building tools
-- **Lighthouse** – Performance audit and monitoring
+- **HTML/CSS** – UI
 
 ### Back-End
 
 - **Node.js (Express)** – Server-side framework
-- **PostgreSQL** – Database for storing user data, preferences, and trip information
-- **Google Maps API** – For route suggestions and distance calculations
-- **OpenWeather API** – For weather forecasts and conditions
-- **Eventbrite API** – To fetch local events happening at the destination
-- **scikit-learn (Python)** – Machine learning models to predict travel times and optimized routes
-- **Rasa** – For AI-driven chatbot
-- **WebSockets (Socket.io)** – Real-time communication between server and client
-- **JWT (JSON Web Token)** – Authentication for secure user sessions
 
 ## Installation
 
@@ -43,38 +26,17 @@
    git clone https://github.com/AshishBytes/TravelQuest.git
    cd TravelQuest
 
-2. Install dependencies for the front-end:
+2. Install dependencies:
    ```bash
-   cd client
    npm install
    ```
 
-3. Install dependencies for the back-end:
-   ```bash
-   cd ../server
-   npm install
-   ```
-
-4. Create a `.env` file in the root of the server folder and add your environment variables for the APIs:
-   ```env
-   GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-   OPENWEATHER_API_KEY=your_openweather_api_key
-   EVENTBRITE_API_KEY=your_eventbrite_api_key
-   JWT_SECRET=your_jwt_secret
-   ```
-
-5. Run the server:
+3. Run the server:
    ```bash
    npm run start
    ```
 
-6. Run the front-end:
-   ```bash
-   cd ../client
-   npm run dev
-   ```
-
-7. Visit `http://localhost:3000` in your browser to explore TravelQuest.
+4. Visit `http://localhost:3000` in your browser to explore TravelQuest.
 
 ## Usage
 
