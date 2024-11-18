@@ -1,0 +1,39 @@
+{
+  "name": "travelquest",
+  "version": "1.0.0",
+  "description": "TravelQuest is a smart travel planner offering personalized itineraries based on user preferences. It integrates real-time data from APIs like Google Maps, OpenWeather, and Eventbrite. With AI-driven route optimization, travel predictions, and an AI chatbot for assistance, TravelQuest simplifies trip planning for a seamless travel experience.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "build": "echo 'No build step defined'",
+    "test": "echo 'No test defined' && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshishBytes/TravelQuest.git"
+  },
+  "keywords": [
+    "travel",
+    "travel-planning",
+    "itinerary",
+    "route-planning",
+    "travel-bot",
+    "AI-travel",
+    "trip-planner"
+  ],
+  "author": "AshishBytes",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.0",
+    "http-server": "^14.1.1",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/AshishBytes/TravelQuest/issues"
+  },
+  "homepage": "https://github.com/AshishBytes/TravelQuest#readme"
+}
