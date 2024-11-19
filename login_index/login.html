@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Sign In with Social Media</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="material-icon/css/material-design-iconic-font.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="loginstyle.css">
+
+    <style>
+        /* Hide the sign-in form initially */
+        .sign-in {
+            display: none;
+        }
+    </style>
+
+    <!-- Add Google API Client Script -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Add Facebook SDK -->
+    <script src="https://connect.facebook.net/en_US/sdk.js" async defer></script>
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Sign Up Form -->
+        <section class="signup" id="signup-section">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign Up</h2>
+                        <form method="POST" class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+
+                            <!-- Social Login Section inside the sign-up form -->
+                            <div class="social-login">
+                                <span class="social-label">Or Sign up with</span>
+                                <ul class="socials">
+                                    <!-- Facebook Login Button -->
+                                    <li><a href="#" id="facebook-login"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                    <!-- Google Login Button -->
+                                    <li><a href="#" id="google-login"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                                    <!-- Twitter Login Button -->
+                                    <li><a href="#" id="twitter-login"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="travelsignup.jpg" alt="sign up image"></figure>
+                        <a href="#" class="login-link">I am already a member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sign In Form -->
+        <section class="sign-in" id="signin-section">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="travelsignin.jpg" alt="sign in image"></figure>
+                        <a href="#" class="signup-link">Create an account</a>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Sign In</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+
+                        <!-- Social Login Section inside the sign-in form -->
+                        <div class="social-login">
+                            <span class="social-label">Or login with</span>
+                            <ul class="socials">
+                                <!-- Facebook Login Button -->
+                                <li><a href="#" id="facebook-login-signin"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <!-- Google Login Button -->
+                                <li><a href="#" id="google-login-signin"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                                <!-- Twitter Login Button -->
+                                <li><a href="#" id="twitter-login-signin"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JavaScript for toggling between forms and social media login -->
+    <script src="login.js"></script>
+
+</body>
+</html>
