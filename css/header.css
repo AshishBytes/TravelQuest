@@ -1,3 +1,8 @@
+@font-face{
+    font-family: title-font;
+    src:url(../fonts/balgeri.otf)
+}
+
 body{
     background-image: url(../Images/background.png);
     background-repeat: no-repeat;
@@ -21,6 +26,10 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+}
+
+.logo h1{
+    font-family: title-font;
 }
 
 .logo img {
