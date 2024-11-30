@@ -1,14 +1,28 @@
 {
-  "name": "base_node_js_project_template",
-  "version": "1.0.0",
-  "description": "A basic started boilerplate project for node",
-  "main": "index.js",
+  "name": "travelquest",
+  "version": "2.0.0",
+  "description": "TravelQuest is a smart travel planner offering personalized itineraries based on user preferences. It integrates real-time data from APIs like Google Maps, OpenWeather, and Eventbrite. With AI-driven route optimization, travel predictions, and an AI chatbot for assistance, TravelQuest simplifies trip planning for a seamless travel experience.",
+  "main": "src/index.js",
   "scripts": {
     "dev": "npx nodemon src/index.js"
   },
-  "author": "Sanket",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshishBytes/TravelQuest.git"
+  },
+  "keywords": [
+    "travel",
+    "travel-planning",
+    "itinerary",
+    "route-planning",
+    "travel-bot",
+    "AI-travel",
+    "trip-planner"
+  ],
+  "author": "AshishBytes",
+  "license": "Apache-2.0",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "cookie-parser": "^1.4.6",
@@ -18,7 +32,14 @@
     "http-status-codes": "^2.2.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.4",
-    "nodemon": "^2.0.22",
     "winston": "^3.15.0"
-  }
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "nodemon": "^2.0.22"
+  },
+  "bugs": {
+    "url": "https://github.com/AshishBytes/TravelQuest/issues"
+  },
+  "homepage": "https://github.com/AshishBytes/TravelQuest#readme"
 }
